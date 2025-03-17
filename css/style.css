@@ -17,8 +17,6 @@ span{
     box-shadow: 4px 4px 4px var(--secundario);
 }
 
-
-
 section {
     margin-top: 50px;
 }
@@ -45,8 +43,6 @@ img:hover{
     box-shadow: 4px 4px 20px #2f00ff,
                 -4px -4px 20px rgb(148, 118, 255);
 }
-
-
 
 .projetos{
     display: flex;
@@ -81,7 +77,6 @@ button{
     width: 100px;
     padding: 5px 5px;
 }
-
 
 :root{
     --primario: rgb(182, 208, 255);

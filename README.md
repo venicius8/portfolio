@@ -10,16 +10,16 @@ Bem vindo ao meu portfólio! Este é um resumo rápido sobre os meus projetos, a
 - **Tempo:** 3 horas
 
 ### 🧘‍♂️ Técnicas Meditativas
-- **Descrição** Uma ótima ferramenta para meditação,desacelerar a mente e ajudar na ansiedade através de técnicas meditativas como acompanhar o balão de ar enquanto respira fundo.
+- **Descrição** Uma ótima ferramenta para meditação, desacelerar a mente e ajudar na ansiedade através de diversa técnicas meditativas.
 - **Tecnologias:** HTML, CSS, JavaScript
 - **Tempo:** (a concluir)
 
 ### 🎮 Jogo de Matemática
-- **Descrição:** É um jogo de matemática que se adapta a sua capacidade de resolver as questões. Quanto mais a facilidade de resolver operações matemáticas, mais complexo fica o jogo.
-- **Tecnologias:** HTML, CSS, JavaScript
+- **Descrição:** É um jogo de matemática que se adapta a sua capacidade de resolver as questões. Quanto mais a facilidade de resolver operações matemáticas, mais complexo o jogo se torna.
+- **Tecnologias:** (a utilizar)
 - **Tempo:** (a concluir)
 
 ### 🏦 Simulador de Banco Digital
 - **Descrição:** Um banco digital fictício, onde é possível criar contas, realizar depósitos e saques, fazer transferência, e muito mais.
-- **Tecnologias:** HTML, CSS, JavaScript, React, Node.js, SQL
+- **Tecnologias:** (a utilizar)
 - **Tempo:** (a concluir)
