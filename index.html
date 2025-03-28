@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1><span>Venícius</span> Miguel</h1>
-        <h2>Desenvolvedor Full-Stack aprendiz</h2>
+      <h1><span>Venícius</span> Miguel</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="burger">
+        <h1 onclick="abrirAba()">☰</h1>
+      </div>
     </header>
+    <aside>
+      <nav>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Meus projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </aside>
 
-    <section>
-        <h2>Sobre mim</h2>
-        <div class="sobre">
-            <img src="assets/eu.jpg" alt="Minha imagem">
-            <p>
-                Sou um programador Full-Stack aprendiz que ama criar novos projetos e resolver problemas relacionados à tecnologia.<br>
-                Desde criança, sempre fui curioso em aprender e explorar coisas novas, junto com minha obsessão por conhecimento insaciável.
-            </p>
-        </div>
+    <section id="sobre">
+      <h2>Desenvolvedor Full-Stack aprendiz</h2>
+      <h2>Sobre mim</h2>
+      <div class="sobre">
+        <img src="assets/eu.jpg" alt="Minha imagem" />
+        <p>
+          Olá, me chamo <u>Venícius</u>. Sou um programador Full-Stack aprendiz que ama criar novos projetos e
+          resolver problemas relacionados à tecnologia.
+        </p>
+      </div>
     </section>
 
-    <section class="projetos">
-        <h2>Meus <span>projetos</span></h2>
-        <div class="projeto">
-            <h3>Calculadora Básica</h3>
-            <div>
-                <button onClick="window.location.href='https://github.com/venicius8/calculadora'">Ver no GitHub</button>
-            </div>
+    <section class="projetos" id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="projeto">
+        <h3>Calculadora Básica</h3>
+        <div>
+          <button
+            onClick="window.location.href='https://github.com/venicius8/calculadora'"
+          >
+            Ver no GitHub
+          </button>
         </div>
-        <div class="projeto">
-            <h3>Técnicas Meditativas</h3>
-            <div>
-                <button onClick="window.location.href='https://github.com/venicius8/tecnicas-meditativas'">Ver no GitHub</button>
-            </div>
+      </div>
+      <div class="projeto">
+        <h3>Técnicas Meditativas</h3>
+        <div>
+          <button
+            onClick="window.location.href='https://github.com/venicius8/tecnicas-meditativas'">
+            Ver no GitHub
+          </button>
         </div>
-        <div class="projeto">
-            <h3>Jogo de Matemática</h3>
-            <div>
-                <button onClick="window.location.href='construindo.html'">Ver no GitHub</button>
-            </div>
-        </div>
-        <div class="projeto">
-            <h3>Simulador de Banco Digital</h3>
-            <div>
-                <button onClick="window.location.href='construindo.html'">Ver no GitHub</button>
-            </div>
-        </div>
-
+      </div>
     </section>
 
-    <section>
-        <h2>Contato 📞</h2>
-        <p>Telefone: (81) 981794628</p>
-        <p>Email: miguelsilva8v@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/venicius8">github.com/venicius8</a></p>
+
+    <section id="contato">
+      <h2>Contato 📞</h2>
+      <p>Email: miguelsilva8v@gmail.com</p>
+      <p>
+        GitHub: <a href="https://github.com/venicius8">github.com/venicius8</a>
+      </p>
     </section>
 
-    <footer>
-        <p>Página construída por mim mesmo💯</p>
-    </footer>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
