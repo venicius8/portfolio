@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
   position: sticky;
-  z-index: 9999;
+  z-index: 1000;
   top: 0;
   height: 40px;
   border-bottom: 1px solid rgb(58, 58, 58);
@@ -40,6 +40,54 @@
 }
 
 .navLink:hover {
-  text-decoration: underline;
   color:#71f6ff;
+  box-shadow: 0 0 20px rgb(0, 138, 138);
+  border-radius: 10px;
+}
+
+.navBurger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+aside {
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 139, 139, 0.7);
+  backdrop-filter: blur(10px);
+  right: -250px;
+  position: fixed;
+  transition: 0.5s;
+  top: 0;
+  z-index: 1001;
+  border-left: 1px solid rgb(117, 117, 117);
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin: 30px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+aside.active {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+  .navLink {
+    display: none;
+  }
+  
+  .navBurger {
+    display: block;
+  }
 }
