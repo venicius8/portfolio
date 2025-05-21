@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import Styles from './header.module.css';
 
-function Header() {
+function Header({ Styles }) {
     const [menu, setMenu] = useState(false);
     return (
         <>
@@ -9,7 +8,7 @@ function Header() {
                 <h1 className={Styles.name}>Venícius' Dev</h1>
                 <nav>
                     <ul className={Styles.navList}>
-                        <li><a className={Styles.navLink} href="#home">Sobre</a></li>
+                        <li><a className={Styles.navLink} href="#about">Sobre</a></li>
                         <li><a className={Styles.navLink} href="#projects">Projetos</a></li>
                         <li><a className={Styles.navLink} href="#contact">Contato</a></li>
                         <li><a className={Styles.navBurger} onClick={() => setMenu(!menu)}>☰</a></li>
@@ -19,8 +18,8 @@ function Header() {
             <aside className={menu ? Styles.active : Styles.aside}>
                 <nav>
                     <ul className={Styles.menu}>
-                        <li><a onClick={() => setMenu(!menu)} href='#'>&#x2715;</a></li>
-                        <li><a href="#home">Sobre</a></li>
+                        <li><a onClick={() => setMenu(!menu)}>&#x2715;</a></li>
+                        <li><a href="#about">Sobre</a></li>
                         <li><a href="#projects">Projetos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>

@@ -1,5 +1,104 @@
+/* Overall styles */
+
+h1, h2 {
+    margin: 5px;
+}
+
+.prettyTag {
+    color: rgb(0, 255, 255);
+}
+
+/* Header section */
+
+.header {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  height: 40px;
+  border-bottom: 1px solid rgb(58, 58, 58);
+}
+
+.name {
+    font-family: "Sansita Swashed";
+    display: flex;
+    justify-content: end;
+    margin-right: 20%;
+}
+
+.navList {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navLink:hover {
+  color:#71f6ff;
+  box-shadow: 0 0 20px rgb(0, 138, 138);
+  border-radius: 10px;
+}
+
+.navBurger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+aside {
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 139, 139, 0.7);
+  backdrop-filter: blur(10px);
+  right: -250px;
+  position: fixed;
+  transition: 0.5s;
+  top: 0;
+  z-index: 1001;
+  border-left: 1px solid rgb(117, 117, 117);
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin: 30px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+aside.active {
+    right: 0;
+}
+
+/* Main part */
+
 .stack::after {
-    color: cyan;
+    color: rgb(0, 255, 255);
     content: "Front-end";
     animation: stacks 9s infinite;
 }
@@ -14,13 +113,9 @@
     }
 }
 
-h1 {
-    margin: 0;
-}
-
 .main {
     width: auto;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,8 +123,86 @@ h1 {
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    .main {
-        font-size: 1rem;
+.main div {
+    width: 60%;
+    height: 2px;
+    background-color: rgb(128, 128, 128);
+    position: relative;
+    top: 150px;
+    animation: mainDiv 2s 4 alternate ease-in-out;
+}
+
+@keyframes mainDiv {
+    0% {
+        top: 150px;
+    } 100% {
+        top: 200px;
     }
+}
+
+/* About section */
+
+.about {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(0, 255, 255);
+}
+
+.justifyAboutMe {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+/* Projects section */
+
+.projects {
+    margin-top: 50px;
+    height: 80vh;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Responsive to small screen */
+
+@media (max-width: 768px) {
+
+  /* Header */
+
+  .navLink {
+    display: none;
+  }
+  
+  .navBurger {
+    display: block;
+  }
+
+  /* Main */
+
+  .main {
+    font-size: 1rem;
+  }
+
+  /* About */
+
+  .aboutMe {
+    flex-direction: column-reverse;
+  }
+  
 }
