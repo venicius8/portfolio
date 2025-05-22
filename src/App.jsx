@@ -1,8 +1,9 @@
 import Header from "./components/header.jsx"
 import Styles from "./app.module.css";
 import meImg from "./assets/meImg.jpg";
-import Projects from "./components/Projects.jsx";
 import PT from "./components/PrettyTag.jsx";
+import Project from "./components/Project.jsx"
+import project01 from "./assets/project01.png"
 
 function App() {
   return (
@@ -33,7 +34,15 @@ function App() {
         </p>
       </section>
 
-      <Projects Styles={Styles} PT={PT} />
+      <section id="projects" className={Styles.projects}>
+          <h1><PT>Projetos</PT></h1>
+          
+          <Project srcImg={project01} altImg={"Projeto nº1"} projectLink={"https://tecnicasmeditativas.netlify.app"} />
+          <Project srcImg={project01} altImg={"Projeto nº2"} />
+          <Project srcImg={project01} altImg={"Projeto nº3"} />
+          <Project srcImg={project01} altImg={"Projeto nº4"} />
+          <Project srcImg={project01} altImg={"Projeto nº5"} />
+      </section>
 
     </>
   )
