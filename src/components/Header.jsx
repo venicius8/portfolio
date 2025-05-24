@@ -18,7 +18,7 @@ function Header({ Styles }) {
             <aside className={menu ? Styles.active : Styles.aside}>
                 <nav>
                     <ul className={Styles.menu}>
-                        <li><a onClick={() => setMenu(!menu)}>&#x2715;</a></li>
+                        <li><button onClick={() => setMenu(!menu)}>&#x2715;</button></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#projects">Projetos</a></li>
                         <li><a href="#contact">Contato</a></li>
