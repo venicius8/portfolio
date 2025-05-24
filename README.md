@@ -27,10 +27,6 @@ src/
 - Contato via GitHub e e-mail
 - Layout responsivo e moderno
 
-## 📸 Demonstração
-
-![Screenshot do Portfólio](src/assets/meImg.jpg)
-
 ## 📦 Como rodar o projeto
 
 1. Instale as dependências:
