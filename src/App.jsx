@@ -1,5 +1,5 @@
-import Header from "./components/header.jsx"
-import Styles from "./app.module.css";
+import Header from "./components/Header.jsx"
+import Styles from "./App.module.css";
 import meImg from "./assets/meImg.jpg";
 import PT from "./components/PrettyTag.jsx";
 import Project from "./components/Project.jsx"
