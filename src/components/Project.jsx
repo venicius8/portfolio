@@ -4,8 +4,7 @@ function Project({ srcImg, altImg, projectLink }) {
             <img
                 onClick={() => window.open(projectLink, "_blank", "noopener,noreferrer")}
                 src={srcImg}
-                alt={altImg}
-                width="400" />
+                alt={altImg} />
         </div>
     )
 }

@@ -25,6 +25,10 @@ function Header({ Styles }) {
                     </ul>
                 </nav>
             </aside>
+            <div
+                className={menu ? Styles.exitAside : Styles.exitAsideOff}
+                onClick={() => setMenu(!menu)}>
+            </div>
         </>
     )
 }

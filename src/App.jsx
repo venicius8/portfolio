@@ -14,12 +14,12 @@ function App() {
 
       <section className={Styles.main}>
         <h1>Olá, me chamo Venícius Miguel</h1>
-        <h2>Sou desenvolvedor <span className={Styles.stack}></span></h2>
-        <div></div>
+        <h2>Sou desenvolvedor <br className={Styles.forSmall} /><span className={Styles.stack}></span></h2>
+        <div className={Styles.mainHr}></div>
       </section>
 
       <section id="about" className={Styles.about}>
-        <h1><PT>Sobre mim</PT></h1>
+        <h1><PT>SobreMim</PT></h1>
         <div className={Styles.justifyAboutMe}>
           <div className={Styles.aboutMe}>
             <p>
@@ -50,20 +50,20 @@ function App() {
           Meu GitHub:
           <a
             href="https://github.com/venicius8"
-            target="_blank" rel="noopener,noreferrer"> https://github.com/venicius8
+            target="_blank" rel="noopener,noreferrer"> github.com<br className={Styles.forSmall} />/venicius8
           </a>
         </label>
         <label>
           Meu Email:
             <a
               href="mailto:miguelsilva8v@gmail.com"
-              target="_blank" rel="noopener,noreferrer"> miguelsilva8v@gmail.com
+              target="_blank" rel="noopener,noreferrer"> miguelsilva8v<br className={Styles.forSmall} />@gmail.com
             </a>
         </label>
       </section>
 
       <footer className={Styles.footer}>
-        <p>Portfólio criado por Venícius Miguel</p>
+        <p>Site criado por Venícius Miguel</p>
         <p>Feito com <span style={{color: "red"}}>♥</span> usando React</p>
       </footer>
     </>
