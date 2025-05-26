@@ -1,4 +1,4 @@
-import Styles from "../app.module.css";
+import Styles from "../App.module.css";
 
 function PrettyTag({ children }) {
     return (
