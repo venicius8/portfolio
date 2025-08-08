@@ -1,6 +1,6 @@
 /* Overall styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
 * {
   font-family: "Lexend Deca", sans-serif;
@@ -14,7 +14,8 @@
   display: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 5px;
 }
 
@@ -80,7 +81,7 @@ u {
 }
 
 .navLink:hover {
-  color:#71f6ff;
+  color: #71f6ff;
   box-shadow: 0 0 20px rgb(0, 138, 138);
   border-radius: 10px;
 }
@@ -158,9 +159,11 @@ aside.active {
 @keyframes stacks {
   0% {
     content: "Front-end";
-  } 33% {
+  }
+  33% {
     content: "Back-end";
-  } 66% {
+  }
+  66% {
     content: "Full-stack";
   }
 }
@@ -187,7 +190,8 @@ aside.active {
 @keyframes mainDiv {
   0% {
     top: 150px;
-  } 100% {
+  }
+  100% {
     top: 200px;
   }
 }
@@ -285,7 +289,6 @@ footer {
 /* Responsive to small screen */
 
 @media (max-width: 768px) {
-
   /* Overall styles */
 
   p {
@@ -305,7 +308,7 @@ footer {
   .navLink {
     display: none;
   }
-  
+
   .navBurger {
     display: block;
   }

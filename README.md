@@ -44,4 +44,5 @@ src/
 Este projeto é de uso pessoal e está aberto para visualização.
 
 ---
+
 Desenvolvido por Venícius Miguel.
