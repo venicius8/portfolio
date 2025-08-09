@@ -262,7 +262,7 @@ aside.active {
 }
 
 .projectInfo {
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   z-index: 990;
   position: fixed;
   top: 50%;
@@ -270,8 +270,9 @@ aside.active {
   transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 10px;
+  border: 1px solid rgb(58, 58, 58);
   text-align: center;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .projectOverlay {
@@ -281,6 +282,7 @@ aside.active {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
   z-index: 980;
 }
 
