@@ -54,19 +54,24 @@ function App() {
         </h1>
 
         <Project
-          srcImg={project01}
-          altImg={"Técnicas Meditativas"}
-          projectLink={"https://tecnicasmeditativas.netlify.app"}
+          title={"Técnicas Meditativas"}
+          img={project01}
+          text={"Aqui, é um lugar perfeito para desacelerar e meditar."}
+          link={"https://tecnicasmeditativas.netlify.app"}
         />
         <Project
-          srcImg={project02}
-          altImg={"Manipulador RGB"}
-          projectLink={"https://manipuladorrgb.netlify.app"}
+          title={"Manipulador RGB"}
+          img={project02}
+          text={"Um sistema que simula as cores dos pixels."}
+          link={"https://manipuladorrgb.netlify.app"}
         />
         <Project
-          srcImg={project03}
-          altImg={"Veni's Fórum"}
-          projectLink={"https://github.com/venicius8/venis-forum"}
+          title={"Veni's Fórum"}
+          img={project03}
+          text={
+            "Como o projeto não está no deploy, o link leva ao reposítorio onde ele está."
+          }
+          link={"https://github.com/venicius8/venis-forum"}
         />
       </section>
 
