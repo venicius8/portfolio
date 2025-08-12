@@ -2,7 +2,7 @@ import ProjectInfo from "./ProjectInfo.jsx";
 import { useState } from "react";
 import Styles from "../App.module.css";
 
-function Project({ title, img, text, link }) {
+function Project({ project }) {
   const [projectInfo, setProjectInfo] = useState(false);
 
   return (
@@ -11,8 +11,8 @@ function Project({ title, img, text, link }) {
         onClick={() => {
           setProjectInfo(!projectInfo);
         }}
-        src={img}
-        alt={`Uma imagem do projeto ${title}`}
+        src={project.img}
+        alt={`Uma imagem do projeto ${project.title}`}
       />
       {projectInfo && (
         <>
@@ -20,7 +20,12 @@ function Project({ title, img, text, link }) {
             className={Styles.projectOverlay}
             onClick={() => setProjectInfo(false)}
           ></div>
-          <ProjectInfo title={title} img={img} text={text} link={link} />
+          <ProjectInfo
+            title={project.title}
+            img={project.img}
+            text={project.text}
+            link={project.link}
+          />
         </>
       )}
     </div>

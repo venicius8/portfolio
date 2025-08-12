@@ -3,9 +3,9 @@ import Styles from "./App.module.css";
 import meImg from "./assets/meImg.jpg";
 import PT from "./components/PrettyTag.jsx";
 import Project from "./components/Project.jsx";
-import project01 from "./assets/project01.png";
-import project02 from "./assets/project02.png";
-import project03 from "./assets/project03.png";
+import project01 from "./projects/project01.jsx";
+import project02 from "./projects/project02.jsx";
+import project03 from "./projects/project03.jsx";
 
 function App() {
   return (
@@ -53,26 +53,9 @@ function App() {
           <PT>Projetos</PT>
         </h1>
 
-        <Project
-          title={"Técnicas Meditativas"}
-          img={project01}
-          text={"Aqui, é um lugar perfeito para desacelerar e meditar."}
-          link={"https://tecnicasmeditativas.netlify.app"}
-        />
-        <Project
-          title={"Manipulador RGB"}
-          img={project02}
-          text={"Um sistema que simula as cores dos pixels."}
-          link={"https://manipuladorrgb.netlify.app"}
-        />
-        <Project
-          title={"Veni's Fórum"}
-          img={project03}
-          text={
-            "Como o projeto não está no deploy, o link leva ao reposítorio onde ele está."
-          }
-          link={"https://github.com/venicius8/venis-forum"}
-        />
+        <Project project={project01} />
+        <Project project={project02} />
+        <Project project={project03} />
       </section>
 
       <section id="contact" className={Styles.contact}>
