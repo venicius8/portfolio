@@ -24,7 +24,8 @@ function Project({ project }) {
             title={project.title}
             img={project.img}
             text={project.text}
-            link={project.link}
+            siteLink={project.siteLink}
+            repoLink={project.repoLink}
           />
         </>
       )}
