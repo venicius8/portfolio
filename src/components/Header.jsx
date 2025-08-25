@@ -5,7 +5,18 @@ function Header({ Styles }) {
   return (
     <>
       <header className={Styles.header}>
-        <h1 className={Styles.name}>Venícius' Dev</h1>
+        <h1
+          className={Styles.name}
+          onClick={() => {
+            window.open(
+              "https://veniciusdev.netlify.app",
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }}
+        >
+          Venícius' Dev
+        </h1>
         <nav>
           <ul className={Styles.navList}>
             <li>

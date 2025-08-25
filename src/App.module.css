@@ -61,6 +61,12 @@ u {
   display: flex;
   justify-content: end;
   margin-right: 20%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.name:hover {
+  color: rgb(121, 255, 188);
 }
 
 .navList {
