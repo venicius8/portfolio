@@ -1,3 +1,11 @@
+export type Language = "pt" | "en" | "es";
+
+export const languageCorrespondence = {
+  pt: "Português",
+  en: "English",
+  es: "Español",
+};
+
 export const dictionary = {
   en: {
     home: {
@@ -22,6 +30,4 @@ export const dictionary = {
         "Portfólio de Venícius, onde encontra-se seus projetos, habilidades e informações de contato.",
     },
   },
-};
-
-export type Language = "pt" | "en" | "es";
+} as const;
