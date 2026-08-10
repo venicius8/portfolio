@@ -8,6 +8,17 @@ export const languageCorrespondence = {
 
 export const dictionary = {
   en: {
+    header: {
+      home: "Home",
+      sections: "Sections",
+      settings: "Settings",
+      menu: "Open main menu",
+      about: "About",
+      projects: "Projects",
+      contact: "Contact",
+      language: "Language",
+      theme: "Theme Color",
+    },
     home: {
       title: "Welcome to Venícius' Portfolio",
       description:
@@ -16,6 +27,17 @@ export const dictionary = {
   },
 
   es: {
+    header: {
+      home: "Inicio",
+      sections: "Secciones",
+      settings: "Configuracións",
+      menu: "Abrir menú principal",
+      about: "Acerca de",
+      projects: "Proyectos",
+      contact: "Contacto",
+      language: "Idioma",
+      theme: "Color del tema",
+    },
     home: {
       title: "Bienvenido al Portafolio de Venícius",
       description:
@@ -24,6 +46,17 @@ export const dictionary = {
   },
 
   pt: {
+    header: {
+      home: "Início",
+      sections: "Seções",
+      settings: "Configurações",
+      menu: "Abrir menu principal",
+      about: "Sobre",
+      projects: "Projetos",
+      contact: "Contato",
+      language: "Idioma",
+      theme: "Cor do tema",
+    },
     home: {
       title: "Bem-vindo ao Portfólio de Venícius",
       description:

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/context/LanguageContext";
-import { dictionary } from "@/data/dictionary";
 import "./globals.css";
+import Header from "@/components/Header/MainHeader";
 
 export const metadata: Metadata = {
   title: "Venicius' Portfolio",
@@ -15,9 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className="min-h-full flex flex-col">
-        <LanguageProvider>{children}</LanguageProvider>
-      </body>
+      <LanguageProvider>
+        <body className="min-h-full flex flex-col">
+          <Header />
+          {children}
+        </body>
+      </LanguageProvider>
     </html>
   );
 }
