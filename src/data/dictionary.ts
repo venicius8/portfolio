@@ -20,9 +20,8 @@ export const dictionary = {
       theme: "Theme Color",
     },
     home: {
-      title: "Welcome to Venícius' Portfolio",
-      description:
-        "Venicius' Portfolio, where you can find his projects, skills, and contact information.",
+      title: "Hey, it's me, ",
+      description: "I'm a developer who works with  ",
     },
   },
 
@@ -39,9 +38,8 @@ export const dictionary = {
       theme: "Color del tema",
     },
     home: {
-      title: "Bienvenido al Portafolio de Venícius",
-      description:
-        "Portafolio de Venícius, donde puedes encontrar sus proyectos, habilidades e información de contacto.",
+      title: "Hola! Soy ",
+      description: "Me dedico al desarrollo de  ",
     },
   },
 
@@ -58,9 +56,8 @@ export const dictionary = {
       theme: "Cor do tema",
     },
     home: {
-      title: "Bem-vindo ao Portfólio de Venícius",
-      description:
-        "Portfólio de Venícius, onde encontra-se seus projetos, habilidades e informações de contato.",
+      title: "Olá, me chamo ",
+      description: "Eu sou desenvolvedor ",
     },
   },
 } as const;
