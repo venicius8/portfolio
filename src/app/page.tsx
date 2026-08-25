@@ -23,7 +23,7 @@ export default function Home() {
             Venícius Miguel
           </span>
         </h1>
-        <p className="text-2xl gap-2 flex">
+        <span className="text-2xl gap-2 flex">
           {t.home.description}
           <span className="text-cyan-400 font-mono">
             <Typewriter
@@ -35,7 +35,7 @@ export default function Home() {
               }}
             />
           </span>
-        </p>
+        </span>
         <div
           aria-hidden="true"
           className="h-30 w-1/3 absolute -bottom-10 animate-[bounce_3s_infinite]"
