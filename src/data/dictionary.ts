@@ -23,6 +23,11 @@ export const dictionary = {
       title: "Hey, it's me, ",
       description: "I'm a developer who works with  ",
     },
+    about: {
+      aboutTitle: "AboutMe",
+      presentation:
+        "Full-stack developer with 1 year of hands-on experience, focused on organization and clean code. I build complete applications using TypeScript, React, and Node.js, with a focus on performance, scalability, and user experience.",
+    },
   },
 
   es: {
@@ -41,6 +46,11 @@ export const dictionary = {
       title: "Hola! Soy ",
       description: "Me dedico al desarrollo de  ",
     },
+    about: {
+      aboutTitle: "QuienSoy",
+      presentation:
+        "Desarrollador full-stack con un año de experiencia práctica, centrado en la organización y el código limpio. Desarrollo aplicaciones completas en TypeScript, React y Node.js, prestando especial atención al rendimiento, la escalabilidad y la experiencia del usuario.",
+    },
   },
 
   pt: {
@@ -58,6 +68,11 @@ export const dictionary = {
     home: {
       title: "Olá, me chamo ",
       description: "Eu sou desenvolvedor ",
+    },
+    about: {
+      aboutTitle: "SobreMim",
+      presentation:
+        "Desenvolvedor full-stack com 1 ano de experiência prática, focado em organização e código limpo. Construo aplicações completas em TypeScript, React e Node.js, com foco em performance, escalabilidade e experiência de usuário.",
     },
   },
 } as const;
