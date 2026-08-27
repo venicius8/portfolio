@@ -50,9 +50,8 @@ export default function Home() {
       </section>
 
       <section className="mb-100" id="about">
-        <h2 className="text-5xl font-extrabold tracking-tight">
-          <PT>{t.about.aboutTitle}</PT>
-        </h2>
+        <PT>{t.about.aboutTitle}</PT>
+        
         <div className="flex flex-col items-center gap-6 bg-black/30 mb-20 border border-black rounded-2xl p-5 lg:flex-row">
           <p className="text-2xl px-10 lg:w-2/3">{t.about.presentation}</p>
           <div className="w-full lg:w-1/3 flex justify-center">
