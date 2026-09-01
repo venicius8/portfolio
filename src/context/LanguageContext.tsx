@@ -1,12 +1,13 @@
 "use client";
 
 import React, { createContext, useContext, useState } from "react";
-import { dictionary, Language } from "@/data/dictionary";
+import { dictionary, Language, projectDictionary } from "@/data/dictionary";
 
 type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (typeof dictionary)[Language];
+  tProjects: (typeof projectDictionary)[Language];
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -20,6 +21,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     language,
     setLanguage,
     t: dictionary[language],
+    tProjects: projectDictionary[language],
   };
 
   return (

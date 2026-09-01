@@ -7,9 +7,10 @@ import Image from "next/image";
 import selfPortrait from "@/assets/self-portrait.png";
 import { stacks } from "@/data/stacks";
 import TechComponent from "@/components/TechComponent";
+import ProjectComponent from "@/components/Project/ProjectComponent";
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, tProjects } = useLanguage();
 
   return (
     <main className="flex min-h-full flex-col items-center justify-between p-10">
@@ -51,7 +52,7 @@ export default function Home() {
 
       <section className="mb-100" id="about">
         <PT>{t.about.aboutTitle}</PT>
-        
+
         <div className="flex flex-col items-center gap-6 bg-black/30 mb-20 border border-black rounded-2xl p-5 lg:flex-row">
           <p className="text-2xl px-10 lg:w-2/3">{t.about.presentation}</p>
           <div className="w-full lg:w-1/3 flex justify-center">
@@ -86,6 +87,16 @@ export default function Home() {
             title="Tools"
           />{" "}
         </div>
+      </section>
+      <section className="mb-100" id="projects">
+        <PT>{t.projects.sectionTitle}</PT>
+        <ProjectComponent
+          projectTitle={tProjects.project1.title}
+          description={tProjects.project1.description}
+          demoLink={tProjects.project1.demoLink}
+          repoLink={tProjects.project1.repoLink}
+          imagePreview="/projects/youzen.png"
+        />
       </section>
     </main>
   );
