@@ -72,20 +72,20 @@ export default function Home() {
             title="Front-end"
           />
           <TechComponent
-            stacks={stacks.backEnd || []}
+            stacks={stacks.backEnd}
             color="bg-black"
             title="Back-end"
           />
           <TechComponent
-            stacks={stacks.database || []}
+            stacks={stacks.database}
             color="bg-gray-500"
             title="Database"
           />
           <TechComponent
-            stacks={stacks.tools || []}
+            stacks={stacks.tools}
             color="bg-blue-900"
             title="Tools"
-          />{" "}
+          />
         </div>
       </section>
       <section className="mb-100" id="projects">
