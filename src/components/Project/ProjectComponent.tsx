@@ -20,7 +20,7 @@ export default function ProjectComponent({
   const { t } = useLanguage();
 
   return (
-    <div className="flex flex-row gap-10 w-full items-start">
+    <div className="flex justify-center gap-10 w-full items-start lg:justify-start lg:flex-row">
       <Image
         src={imagePreview}
         alt={projectTitle}
