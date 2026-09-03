@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-100" id="about">
+      <section className="py-24" id="about">
         <PT>{t.about.aboutTitle}</PT>
 
         <div className="flex flex-col items-center gap-6 bg-black/30 mb-20 border border-black rounded-2xl p-5 lg:flex-row">
@@ -88,7 +88,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="mb-100" id="projects">
+      <section className="py-24" id="projects">
         <PT>{t.projects.sectionTitle}</PT>
         <ProjectComponent
           projectTitle={tProjects.project1.title}
