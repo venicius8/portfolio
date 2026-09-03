@@ -13,9 +13,9 @@ export default function Home() {
   const { t, tProjects } = useLanguage();
 
   return (
-    <main className="flex min-h-full flex-col items-center justify-between p-10">
+    <main className="flex min-h-full flex-col p-10">
       <section className="flex flex-col items-center justify-center h-screen gap-5 mb-30">
-        <h1 className="text-5xl font-extrabold tracking-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-center">
           {t.home.title}
           <span
             className="
@@ -29,7 +29,7 @@ export default function Home() {
             Venícius Miguel
           </span>
         </h1>
-        <span className="text-2xl gap-2 flex">
+        <span className="text-xl sm:text-2xl gap-2 flex">
           {t.home.description}
           <span className="text-cyan-400 font-mono">
             <Typewriter
