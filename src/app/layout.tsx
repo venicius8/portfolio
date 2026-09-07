@@ -1,10 +1,10 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/context/LanguageContext";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { ThemeProvider } from "@/components/Theme/ThemeProvider";
 import Header from "@/components/Header/MainHeader";
 import "./globals.css";
-import SetTheme from "@/components/SetTheme";
+import SetTheme from "@/components/Theme/SetTheme";
 
 export const metadata: Metadata = {
   title: "Venicius' Portfolio",

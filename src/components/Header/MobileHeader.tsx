@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import SetLanguage from "@/components/SetLanguage";
-import SetTheme from "@/components/SetTheme";
+import SetTheme from "@/components/Theme/SetTheme";
 
 export function MobileHeader({ t, onNavClick }: any) {
   const [openSection, setOpenSection] = useState<
