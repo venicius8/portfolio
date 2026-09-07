@@ -44,7 +44,7 @@ export default function ProjectDetails({
             onClick={() => setIsOpen(false)}
             className="rounded-lg bg-close-button px-4 py-2 text-sm font-medium transition-colors hover:bg-hover active:scale-95"
           >
-            Fechar
+            {t.projects.closeLabel}
           </button>
 
           <a

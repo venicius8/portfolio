@@ -37,6 +37,7 @@ export const dictionary = {
       sectionTitle: "Projects",
       demoLabel: "View demo",
       repoLabel: "Repository",
+      closeLabel: "Close",
     },
   },
 
@@ -70,6 +71,7 @@ export const dictionary = {
       sectionTitle: "Proyectos",
       demoLabel: "Ver demo",
       repoLabel: "Repositorio",
+      closeLabel: "Cerrar",
     },
   },
 
@@ -103,6 +105,7 @@ export const dictionary = {
       sectionTitle: "Projetos",
       demoLabel: "Ver demo",
       repoLabel: "Repositório",
+      closeLabel: "Fechar",
     },
   },
 } as const;
