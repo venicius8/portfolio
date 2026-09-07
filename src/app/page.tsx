@@ -14,7 +14,10 @@ export default function Home() {
 
   return (
     <main className="flex min-h-full flex-col p-10 bg-background text-foreground">
-      <section className="flex flex-col items-center justify-center h-screen gap-5 mb-30">
+      <section
+        className="flex flex-col items-center justify-center h-screen gap-5 mb-30"
+        id="home"
+      >
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-center">
           {t.home.title}
           <span
