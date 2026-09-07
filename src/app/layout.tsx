@@ -1,7 +1,10 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/context/LanguageContext";
-import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header/MainHeader";
+import "./globals.css";
+import SetTheme from "@/components/SetTheme";
 
 export const metadata: Metadata = {
   title: "Venicius' Portfolio",
@@ -14,13 +17,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt">
-      <LanguageProvider>
-        <body className="min-h-full flex flex-col">
-          <Header />
-          {children}
-        </body>
-      </LanguageProvider>
+    <html lang="pt" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <LanguageProvider>
+            <Header />
+            {children}
+          </LanguageProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import SetLanguage from "../SetLanguage"; // Adjust the import path if needed
+import SetLanguage from "@/components/SetLanguage";
+import SetTheme from "@/components/SetTheme";
 
 export default function DesktopHeader({ t }: { t: any }) {
   const [openSection, setOpenSection] = useState<
@@ -13,7 +14,7 @@ export default function DesktopHeader({ t }: { t: any }) {
   };
 
   const linkClasses =
-    "text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1.5 cursor-pointer";
+    "hover:bg-hover px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1.5 cursor-pointer";
 
   return (
     <nav className="hidden lg:flex items-center space-x-4 relative">
@@ -33,25 +34,25 @@ export default function DesktopHeader({ t }: { t: any }) {
         </button>
 
         {openSection === "sections" && (
-          <div className="absolute left-0 mt-2 w-48 bg-gray-800 border border-gray-700 rounded-md shadow-xl py-2 z-50">
+          <div className="absolute left-0 mt-2 w-48 bg-secondary border border-border rounded-md shadow-xl py-2 z-50">
             <a
               href="#about"
               onClick={() => setOpenSection(null)}
-              className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
+              className="block px-4 py-2 text-sm hover:bg-hover transition-colors"
             >
               {t.header.about}
             </a>
             <a
               href="#projects"
               onClick={() => setOpenSection(null)}
-              className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
+              className="block px-4 py-2 text-sm hover:bg-hover transition-colors"
             >
               {t.header.projects}
             </a>
             <a
               href="#contact"
               onClick={() => setOpenSection(null)}
-              className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
+              className="block px-4 py-2 text-sm hover:bg-hover transition-colors"
             >
               {t.header.contact}
             </a>
@@ -71,9 +72,9 @@ export default function DesktopHeader({ t }: { t: any }) {
         </button>
 
         {openSection === "settings" && (
-          <div className="absolute right-0 mt-2 w-64 bg-gray-800 border border-gray-700 rounded-md shadow-xl p-4 z-50 space-y-4">
+          <div className="absolute right-0 mt-2 w-fit bg-secondary border border-border rounded-md shadow-xl p-4 z-50 space-y-4">
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2">
                 {t.header.language}
               </p>
               <div className="flex gap-2">
@@ -82,9 +83,12 @@ export default function DesktopHeader({ t }: { t: any }) {
             </div>
 
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2">
                 {t.header.theme}
               </p>
+              <div className="flex gap-2">
+                <SetTheme />
+              </div>
             </div>
           </div>
         )}

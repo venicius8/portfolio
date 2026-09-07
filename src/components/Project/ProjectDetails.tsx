@@ -25,26 +25,24 @@ export default function ProjectDetails({
       onClick={() => setIsOpen(false)}
     >
       <div
-        className="relative w-full max-w-lg rounded-xl bg-slate-800 p-6 text-slate-100 shadow-2xl transition-all"
+        className="relative w-full max-w-lg rounded-xl bg-secondary p-6 shadow-2xl transition-all border border-border"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-700 hover:text-white"
+          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-hover"
           aria-label="Close modal"
         >
           ✕
         </button>
 
-        <h3 className="mb-3 text-2xl font-bold text-white">{projectTitle}</h3>
-        <p className="mb-6 text-sm leading-relaxed text-slate-300">
-          {description}
-        </p>
+        <h3 className="mb-3 text-2xl font-bold">{projectTitle}</h3>
+        <p className="mb-6 text-sm leading-relaxed">{description}</p>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-end">
           <button
             onClick={() => setIsOpen(false)}
-            className="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition-colors hover:bg-slate-600 active:scale-95"
+            className="rounded-lg bg-close-button px-4 py-2 text-sm font-medium transition-colors hover:bg-hover active:scale-95"
           >
             Fechar
           </button>
@@ -53,7 +51,7 @@ export default function ProjectDetails({
             href={demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-lg bg-cyan-700 px-4 py-2 text-sm font-medium text-white shadow-md transition-colors hover:bg-cyan-500 active:scale-95"
+            className="flex items-center justify-center rounded-lg bg-primary-button px-4 py-2 text-sm font-medium shadow-md transition-colors hover:bg-hover active:scale-95"
           >
             {t.projects.demoLabel}
           </a>
@@ -62,7 +60,7 @@ export default function ProjectDetails({
             href={repoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-lg bg-cyan-900 px-4 py-2 text-sm font-medium text-white shadow-md transition-colors hover:bg-cyan-950 active:scale-95"
+            className="flex items-center justify-center rounded-lg bg-secondary-button px-4 py-2 text-sm font-medium shadow-md transition-colors hover:bg-hover active:scale-95"
           >
             {t.projects.repoLabel}
           </a>

@@ -1,26 +1,96 @@
+/* app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #d7d7d7;
+    --foreground: #1d1d1d;
+    --card: rgba(255, 255, 255, 0.6);
+    --border: #e5e7eb;
+    --divider: #333333;
+
+    --primary: #009fc7;
+    --secondary: #a7b8ff;
+    --hover: #c9d3f4;
+    --border: #0d6876;
+
+    --primary-button: #25d2fe;
+    --secondary-button: #1696b7;
+    --close-button: #ff7878;
+
+    --tech-frontend: #55d885;
+    --tech-backend: #81a3c3;
+    --tech-database: #878787;
+    --tech-tools: #608aff;
+  }
+
+  .dark {
+    --background: #101010;
+    --foreground: #fcfcfc;
+    --card: rgba(0, 0, 0, 0.3);
+    --border: #000000;
+    --divider: #ffffff;
+
+    --primary: #00ddff;
+    --secondary: #1b2b3f;
+    --hover: #1a1f27;
+    --border: #003d46;
+
+    --primary-button: #0891b2;
+    --secondary-button: #09647b;
+    --close-button: #ff2020;
+
+    --tech-frontend: #166534;
+    --tech-backend: #000000;
+    --tech-database: #6b7280;
+    --tech-tools: #1e3a8a;
+  }
+
+  .high-contrast {
+    --background: #000000;
+    --foreground: #ffffff;
+    --card: rgba(30, 30, 30, 0.95);
+    --border: #ffffff;
+    --divider: #ffffff;
+
+    --primary: #00e1ff;
+    --secondary: #000000;
+    --hover: #1e2229;
+    --border: #ffffff;
+
+    --primary-button: #004353;
+    --secondary-button: #001317;
+    --close-button: #ff0000;
+
+    --tech-frontend: #001d0b;
+    --tech-backend: #141414;
+    --tech-database: #000000;
+    --tech-tools: #001b3b;
   }
 }
 
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-divider: var(--divider);
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-hover: var(--hover);
+
+  --color-primary-button: var(--primary-button);
+  --color-secondary-button: var(--secondary-button);
+  --color-close-button: var(--close-button);
+
+  --color-tech-frontend: var(--tech-frontend);
+  --color-tech-backend: var(--tech-backend);
+  --color-tech-database: var(--tech-database);
+  --color-tech-tools: var(--tech-tools);
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

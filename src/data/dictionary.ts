@@ -18,6 +18,11 @@ export const dictionary = {
       contact: "Contact",
       language: "Language",
       theme: "Theme Color",
+      themeColor: {
+        light: "Light",
+        dark: "Dark",
+        highContrast: "High Contrast",
+      },
     },
     home: {
       title: "Hey, it's me, ",
@@ -46,6 +51,11 @@ export const dictionary = {
       contact: "Contacto",
       language: "Idioma",
       theme: "Color del tema",
+      themeColor: {
+        light: "Claro",
+        dark: "Oscuro",
+        highContrast: "Alto Contraste",
+      },
     },
     home: {
       title: "Hola! Soy ",
@@ -74,6 +84,11 @@ export const dictionary = {
       contact: "Contato",
       language: "Idioma",
       theme: "Cor do tema",
+      themeColor: {
+        light: "Claro",
+        dark: "Escuro",
+        highContrast: "Alto Contraste",
+      },
     },
     home: {
       title: "Olá, me chamo ",

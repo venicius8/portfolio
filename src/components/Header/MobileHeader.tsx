@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import SetLanguage from "../SetLanguage";
+import SetLanguage from "@/components/SetLanguage";
+import SetTheme from "@/components/SetTheme";
 
 export function MobileHeader({ t, onNavClick }: any) {
   const [openSection, setOpenSection] = useState<
@@ -13,10 +14,10 @@ export function MobileHeader({ t, onNavClick }: any) {
   };
 
   const btnClasses =
-    "text-gray-300 hover:text-white hover:bg-gray-700 block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors flex justify-between items-center";
+    "hover:bg-hover block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors flex justify-between items-center";
 
   return (
-    <div className="lg:hidden bg-gray-800 border-t border-gray-700">
+    <div className="lg:hidden bg-secondary border-t border-border">
       <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <a href="#home" onClick={onNavClick} className={btnClasses}>
           ⌂ {t.header.home}
@@ -33,25 +34,25 @@ export function MobileHeader({ t, onNavClick }: any) {
         </button>
 
         {openSection === "sections" && (
-          <div className="pl-4 space-y-1 bg-gray-900/50 rounded-md py-2">
+          <div className="pl-4 space-y-1 bg-primary/20 rounded-md py-2">
             <a
               href="#about"
               onClick={onNavClick}
-              className="block px-3 py-1.5 text-sm text-gray-300 hover:text-white"
+              className="block px-3 py-1.5 text-sm"
             >
               {t.header.about}
             </a>
             <a
               href="#projects"
               onClick={onNavClick}
-              className="block px-3 py-1.5 text-sm text-gray-300 hover:text-white"
+              className="block px-3 py-1.5 text-sm"
             >
               {t.header.projects}
             </a>
             <a
               href="#contact"
               onClick={onNavClick}
-              className="block px-3 py-1.5 text-sm text-gray-300 hover:text-white"
+              className="block px-3 py-1.5 text-sm"
             >
               {t.header.contact}
             </a>
@@ -69,9 +70,9 @@ export function MobileHeader({ t, onNavClick }: any) {
         </button>
 
         {openSection === "settings" && (
-          <div className="p-3 bg-gray-900/50 rounded-md space-y-3">
+          <div className="p-3 bg-primary/20 rounded-md space-y-3">
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2">
                 {t.header.language}
               </p>
               <div className="flex gap-2">
@@ -80,9 +81,12 @@ export function MobileHeader({ t, onNavClick }: any) {
             </div>
 
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2">
                 {t.header.theme}
               </p>
+              <div className="flex gap-2">
+                <SetTheme />
+              </div>
             </div>
           </div>
         )}
@@ -105,7 +109,7 @@ export function MobileHeaderMenu({
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         type="button"
-        className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+        className="inline-flex items-center justify-center p-2 rounded-md hover:bg-hover focus:outline-none"
         aria-expanded={isMenuOpen}
       >
         <span className="sr-only">{t.header.menu}</span>

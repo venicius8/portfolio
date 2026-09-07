@@ -14,13 +14,13 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed py-3 top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-md transition-all duration-300">
+    <header className="fixed bg-black/10 py-3 top-0 left-0 w-full z-50 bg-opacity-90 backdrop-blur-sm shadow-md transition-all duration-300 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="shrink">
             <a
               href="/"
-              className="text-3xl font-bold text-white hover:text-blue-400 transition-colors"
+              className="text-3xl font-bold hover:text-primary transition-colors"
             >
               Venícius' Portfolio
             </a>
