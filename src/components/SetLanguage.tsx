@@ -11,7 +11,7 @@ function LanguageButton({
   const { setLanguage } = useLanguage();
   return (
     <button
-      className="bg-primary-button hover:bg-hover font-bold py-2 px-4 rounded"
+      className="text-foreground border border-border font-bold py-2 px-4 rounded hover:bg-hover transition-colors cursor-pointer"
       onClick={() => setLanguage(lang)}
     >
       {children}
@@ -21,7 +21,7 @@ function LanguageButton({
 
 export default function SetLanguage() {
   return (
-    <div>
+    <div className="flex gap-2">
       {Object.entries(languageCorrespondence).map(([lang, label]) => (
         <LanguageButton key={lang} lang={lang as Language}>
           {label}
