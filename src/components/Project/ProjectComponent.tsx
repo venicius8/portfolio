@@ -71,6 +71,8 @@ export default function ProjectComponent({
           setIsOpen={setIsOpen}
           projectTitle={projectTitle}
           description={description}
+          demoLink={demoLink}
+          repoLink={repoLink}
         />
       )}
     </div>

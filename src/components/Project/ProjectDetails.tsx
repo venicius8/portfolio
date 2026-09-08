@@ -14,8 +14,8 @@ export default function ProjectDetails({
   setIsOpen,
   projectTitle,
   description,
-  demoLink = "#",
-  repoLink = "#",
+  demoLink,
+  repoLink,
 }: ProjectDetailsProps) {
   const { t } = useLanguage();
 
