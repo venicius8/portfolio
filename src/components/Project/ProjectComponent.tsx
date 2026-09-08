@@ -47,7 +47,7 @@ export default function ProjectComponent({
               href={demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-1/2 items-center justify-center rounded-lg bg-primary-button px-4 py-2.5 shadow-md transition-colors hover:bg-primary-button/50 active:scale-95"
+              className="flex w-1/2 items-center justify-center rounded-lg bg-primary-button px-4 py-2.5 shadow-md transition-colors border border-border hover:bg-primary-button/50 active:scale-95"
             >
               {t.projects.demoLabel}
             </a>
@@ -58,7 +58,7 @@ export default function ProjectComponent({
               href={repoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-1/2 items-center justify-center rounded-lg bg-secondary-button px-4 py-2.5 shadow-md transition-colors hover:bg-secondary-button/50 active:scale-95"
+              className="flex w-1/2 items-center justify-center rounded-lg bg-secondary-button px-4 py-2.5 shadow-md transition-colors border border-border hover:bg-secondary-button/50 active:scale-95"
             >
               {t.projects.repoLabel}
             </a>

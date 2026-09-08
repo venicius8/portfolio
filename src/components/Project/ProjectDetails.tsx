@@ -30,7 +30,7 @@ export default function ProjectDetails({
       >
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full transition-colors cursor-pointer hover:bg-hover"
+          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full transition-colors cursor-pointer border border-border hover:bg-hover"
           aria-label={t.projects.closeLabel}
         >
           ✕
@@ -42,7 +42,7 @@ export default function ProjectDetails({
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-end">
           <button
             onClick={() => setIsOpen(false)}
-            className="rounded-lg bg-close-button px-4 py-2 text-sm font-medium transition-colors cursor-pointer hover:bg-hover active:scale-95"
+            className="rounded-lg bg-close-button px-4 py-2 text-sm font-medium transition-colors cursor-pointer border border-border hover:bg-hover active:scale-95"
           >
             {t.projects.closeLabel}
           </button>
@@ -51,7 +51,7 @@ export default function ProjectDetails({
             href={demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-lg bg-primary-button px-4 py-2 text-sm font-medium shadow-md transition-colors hover:bg-hover active:scale-95"
+            className="flex items-center justify-center rounded-lg bg-primary-button px-4 py-2 text-sm font-medium shadow-md transition-colors border border-border hover:bg-hover active:scale-95"
           >
             {t.projects.demoLabel}
           </a>
@@ -60,7 +60,7 @@ export default function ProjectDetails({
             href={repoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-lg bg-secondary-button px-4 py-2 text-sm font-medium shadow-md transition-colors hover:bg-hover active:scale-95"
+            className="flex items-center justify-center rounded-lg bg-secondary-button px-4 py-2 text-sm font-medium shadow-md transition-colors border border-border hover:bg-hover active:scale-95"
           >
             {t.projects.repoLabel}
           </a>

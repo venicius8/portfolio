@@ -29,7 +29,7 @@ export default function SetTheme() {
         <button
           key={value}
           onClick={() => setTheme(value)}
-          className="text-foreground border border-border font-bold py-2 px-4 rounded hover:bg-hover transition-colors"
+          className="text-foreground border border-border font-bold py-2 px-4 rounded hover:bg-hover transition-colors cursor-pointer"
         >
           {t.header.themeColor[labelKey]}
         </button>
