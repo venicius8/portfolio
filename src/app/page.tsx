@@ -8,6 +8,7 @@ import selfPortrait from "@/assets/self-portrait.png";
 import { stacks } from "@/data/stacks";
 import TechComponent from "@/components/TechComponent";
 import ProjectComponent from "@/components/Project/ProjectComponent";
+import ContactButton from "@/components/Contact/ContactButton";
 
 export default function Home() {
   const { t, tProjects } = useLanguage();
@@ -101,6 +102,20 @@ export default function Home() {
           repoLink={tProjects.project1.repoLink}
           imagePreview="/projects/youzen.png"
         />
+      </section>
+
+      <section className="py-24" id="contact">
+        <PT>{t.contact.sectionTitle}</PT>
+        <p className="text-2xl px-10 mb-10">{t.contact.description}</p>
+        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <ContactButton label="Email" url="mailto:venicius8v@gmail.com" />
+          <ContactButton
+            label="LinkedIn"
+            url="https://www.linkedin.com/in/venícius-silva/"
+          />
+          <ContactButton label="GitHub" url="https://github.com/venicius8" />
+          <ContactButton label="X (Twitter)" url="https://x.com/veni_dev" />
+        </div>
       </section>
     </main>
   );

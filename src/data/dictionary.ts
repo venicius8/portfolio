@@ -39,6 +39,11 @@ export const dictionary = {
       repoLabel: "Repository",
       closeLabel: "Close",
     },
+    contact: {
+      sectionTitle: "Contact",
+      description:
+        "If you want to get in touch with me, whether it's for new opportunities or just to chat, feel free to reach out to me through any of these channels:",
+    },
   },
 
   es: {
@@ -73,6 +78,11 @@ export const dictionary = {
       repoLabel: "Repositorio",
       closeLabel: "Cerrar",
     },
+    contact: {
+      sectionTitle: "Contacto",
+      description:
+        "Si quieres ponerte en contacto conmigo, ya sea para nuevas oportunidades o simplemente para charlar, no dudes en encontrarme en alguno de estos canales:",
+    },
   },
 
   pt: {
@@ -106,6 +116,11 @@ export const dictionary = {
       demoLabel: "Ver demo",
       repoLabel: "Repositório",
       closeLabel: "Fechar",
+    },
+    contact: {
+      sectionTitle: "Contato",
+      description:
+        "Se quiser entrar em contato comigo, seja para novas oportunidades ou apenas para bater um papo, sinta-se à vontade para me encontrar em algum desses canais:",
     },
   },
 } as const;
