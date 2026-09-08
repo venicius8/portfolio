@@ -30,8 +30,8 @@ export default function ProjectDetails({
       >
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-hover"
-          aria-label="Close modal"
+          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full transition-colors cursor-pointer hover:bg-hover"
+          aria-label={t.projects.closeLabel}
         >
           ✕
         </button>
@@ -42,7 +42,7 @@ export default function ProjectDetails({
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-end">
           <button
             onClick={() => setIsOpen(false)}
-            className="rounded-lg bg-close-button px-4 py-2 text-sm font-medium transition-colors hover:bg-hover active:scale-95"
+            className="rounded-lg bg-close-button px-4 py-2 text-sm font-medium transition-colors cursor-pointer hover:bg-hover active:scale-95"
           >
             {t.projects.closeLabel}
           </button>
